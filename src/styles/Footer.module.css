@@ -1,0 +1,70 @@
+.footer {
+  background-color: #01080f; /* Slightly darker than #020a12 for the footer */
+  padding: 80px 0 40px;
+  border-top: 1px solid rgba(16, 42, 67, 0.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footerLogo {
+  height: 32px;
+  margin-bottom: 24px;
+}
+
+.brandText {
+  color: var(--text-secondary);
+  max-width: 300px;
+  font-size: 0.95rem;
+}
+
+.groupTitle {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.linksGroup ul {
+  list-style: none;
+}
+
+.linksGroup ul li {
+  margin-bottom: 12px;
+}
+
+.linksGroup ul li a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.linksGroup ul li a:hover {
+  color: var(--color-brand-green);
+}
+
+.bottom {
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
