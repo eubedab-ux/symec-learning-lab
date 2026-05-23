@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>© {new Date().getFullYear()} SYMEC Enterprise Solutions. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} SYMEC Learning Lab. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
