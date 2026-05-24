@@ -1,5 +1,5 @@
 .cta {
-  background: radial-gradient(circle at 50% 50%, var(--bg-accent) 0%, var(--bg-primary) 100%);
+  background-color: #020a12;
 }
 
 .ctaBox {
@@ -41,17 +41,19 @@
 }
 
 .secondaryBtn {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.02);
   color: var(--text-primary);
-  border: 1px solid var(--bg-accent);
+  border: 1px solid rgba(156, 163, 175, 0.35);
   padding: 18px 40px;
   border-radius: 4px;
   font-weight: 600;
   font-size: 1.1rem;
+  transition: all 0.25s ease;
 }
 
 .secondaryBtn:hover {
-  background-color: var(--bg-accent);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(229, 231, 235, 0.8);
 }
 
 @media (max-width: 768px) {
