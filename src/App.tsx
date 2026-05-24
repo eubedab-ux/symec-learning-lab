@@ -4,6 +4,7 @@ import Benefits from './components/Benefits';
 import Methodology from './components/Methodology';
 import Analytics from './components/Analytics';
 import Mobile from './components/Mobile';
+import Teaser from './components/Teaser';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ function App() {
         <Methodology />
         <Analytics />
         <Mobile />
+        <Teaser />
         <CTA />
       </main>
       <Footer />

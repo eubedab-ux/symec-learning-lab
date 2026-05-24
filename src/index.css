@@ -2,14 +2,14 @@
 
 :root {
   /* Color Palette - Exact Reference Match */
-  --bg-primary: #020a12;    /* The exact "casi negro" from the reference */
-  --bg-secondary: #050e18;  /* Subtle variation for depth */
-  --bg-accent: #0A1F33;     /* Subtle cards and elements */
+  --bg-primary: #000000;    /* Pure black base */
+  --bg-secondary: #020A12;  /* Exact corporative navy */
+  --bg-accent: rgba(10, 31, 51, 0.25); /* Transparent glassmorphic base for cards */
   --color-brand-green: #00C26E;
   --color-brand-orange: #FF8A00;
   --text-primary: #E5E7EB;
   --text-secondary: #9CA3AF;
-  --border-color: rgba(16, 42, 67, 0.3);
+  --border-color: rgba(16, 42, 67, 0.2);
   
   /* Spacing */
   --section-padding: 120px 0;
@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: var(--bg-primary);
+  background: linear-gradient(to bottom, #000000 0%, #020A12 100%);
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
@@ -27,7 +27,7 @@ body {
 }
 
 section {
-  background-color: var(--bg-primary);
+  background-color: transparent;
 }
 
 h1, h2, h3 {

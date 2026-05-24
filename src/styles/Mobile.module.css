@@ -1,5 +1,5 @@
 .mobile {
-  background-color: var(--bg-secondary);
+  background-color: transparent;
 }
 
 .container {
@@ -79,7 +79,7 @@
 
 .appNav {
   height: 60px;
-  background-color: var(--bg-secondary);
+  background-color: transparent;
   display: flex;
   justify-content: space-around;
   align-items: center;

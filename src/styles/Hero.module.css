@@ -1,12 +1,14 @@
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding-top: 100px;
-  background-color: var(--bg-primary);
+  padding-top: 130px;
+  padding-bottom: 80px;
+  background: transparent;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 }
 
 .hero::after {
@@ -27,14 +29,14 @@
 }
 
 .logoContainer {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   animation: fadeInDown 1s ease-out;
 }
 
 .mainLogo {
-  height: 80px; /* Increased size for premium presence */
+  height: 272px; /* Adjusted to 272px (reduced by 15% from 320px) */
   width: auto;
-  filter: drop-shadow(0 0 20px rgba(0, 194, 110, 0.1));
+  filter: drop-shadow(0 0 30px rgba(0, 194, 110, 0.2));
 }
 
 .badge {
@@ -46,7 +48,7 @@
   border-radius: 4px; /* More executive sharp corners */
   font-size: 0.8rem;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -127,6 +129,9 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 110px;
+  }
   .title {
     font-size: 2.5rem;
   }
@@ -135,7 +140,7 @@
     width: 100%;
   }
   .mainLogo {
-    height: 60px;
+    height: 204px;
   }
 }
 
