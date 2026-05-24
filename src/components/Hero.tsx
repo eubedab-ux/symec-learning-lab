@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
             Difusión, formación y analítica de alto nivel en un ecosistema premium.
           </p>
           <div className={styles.actions}>
-            <button className={styles.primaryBtn}>Explorar Learning Lab</button>
+            <button className={styles.primaryBtn} onClick={() => { const el = document.getElementById('benefits'); if (el) { el.scrollIntoView({ behavior: 'smooth' }); } }}>Explorar Learning Lab</button>
             <a 
               href="https://offset-yam-19659398.figma.site/" 
               target="_blank" 
