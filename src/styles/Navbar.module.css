@@ -6,7 +6,7 @@
   height: 90px;
   display: flex;
   align-items: center;
-  background-color: rgba(2, 10, 18, 0.8); /* Using #020a12 with alpha */
+  background-color: rgba(2, 10, 18, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(16, 42, 67, 0.2);
@@ -26,7 +26,7 @@
 }
 
 .logoImg {
-  height: 52px; /* Increased by 50% for stronger brand presence */
+  height: 52px;
   width: auto;
   object-fit: contain;
 }
@@ -55,14 +55,14 @@
   background-color: var(--color-brand-green);
   color: #000000;
   border: none;
-  padding: 14px 28px; /* Slightly narrower horizontal padding */
+  padding: 14px 28px;
   border-radius: 6px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem; /* Slightly larger for better balance with sentence case */
+  font-size: 0.95rem;
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 12px rgba(0, 194, 110, 0.15);
-  letter-spacing: -0.01em; /* Tighter for a more modern executive feel */
+  letter-spacing: -0.01em;
   display: flex;
   align-items: center;
   justify-content: center;

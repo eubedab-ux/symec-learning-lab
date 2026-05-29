@@ -8,7 +8,6 @@ interface LoginModalProps {
 }
 
 const LoginModal = ({ isOpen, onClose }: LoginModalProps) => {
-  /* Lock body scroll while open & close on Escape */
   useEffect(() => {
     if (!isOpen) return;
 
@@ -27,7 +26,6 @@ const LoginModal = ({ isOpen, onClose }: LoginModalProps) => {
 
   if (!isOpen) return null;
 
-  /* Close when clicking the dark overlay (not the modal itself) */
   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) onClose();
   };
@@ -40,7 +38,6 @@ const LoginModal = ({ isOpen, onClose }: LoginModalProps) => {
         aria-modal="true"
         aria-labelledby="login-title"
       >
-        {/* Close button */}
         <button
           className={styles.closeBtn}
           onClick={onClose}
@@ -51,10 +48,8 @@ const LoginModal = ({ isOpen, onClose }: LoginModalProps) => {
           </svg>
         </button>
 
-        {/* Title */}
         <h2 id="login-title" className={styles.title}>Login</h2>
 
-        {/* Form */}
         <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
           <div className={styles.field}>
             <label htmlFor="login-email" className={styles.label}>

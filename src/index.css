@@ -6,10 +6,10 @@ html {
 }
 
 :root {
-  /* Color Palette - Exact Reference Match */
-  --bg-primary: #020a12;    /* Corporate navy base */
-  --bg-secondary: #020A12;  /* Exact corporative navy */
-  --bg-accent: rgba(10, 31, 51, 0.25); /* Transparent glassmorphic base for cards */
+  /* Color Palette */
+  --bg-primary: #020a12;
+  --bg-secondary: #020A12;
+  --bg-accent: rgba(10, 31, 51, 0.25);
   --color-brand-green: #00C26E;
   --color-brand-orange: #FF8A00;
   --text-primary: #E5E7EB;

@@ -5,7 +5,6 @@
   padding: var(--section-padding);
 }
 
-/* Sutil resplandor de fondo detrás del video */
 .teaser::before {
   content: '';
   position: absolute;
@@ -46,7 +45,6 @@
   z-index: 2;
 }
 
-/* Contenedor del video con estilo de terminal / demo premium */
 .videoWrapper {
   position: relative;
   width: 100%;
@@ -87,7 +85,6 @@
   filter: brightness(0.85) contrast(1.05);
 }
 
-/* Overlay cinematográfico oscuro premium */
 .videoOverlay {
   position: absolute;
   top: 0;
@@ -117,7 +114,6 @@
   );
 }
 
-/* Decoración tecnológica de cuadrícula (grid) */
 .techGrid {
   position: absolute;
   inset: 0;
@@ -132,7 +128,6 @@
   z-index: 1;
 }
 
-/* Botón de reproducción elegante */
 .playButton {
   position: relative;
   width: 80px;
@@ -152,13 +147,11 @@
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Flecha de play con sutil desplazamiento para centrado óptico */
 .playIcon {
   transform: translateX(3px);
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Ondas concéntricas de pulso */
 .ripple, .ripple2 {
   position: absolute;
   top: -5px;
@@ -191,7 +184,6 @@
   transform: translateX(3px) scale(1.05);
 }
 
-/* Detalles de interfaz tecnológica en las esquinas */
 .techDecor {
   position: absolute;
   inset: 20px;
@@ -236,7 +228,6 @@
   border-width: 0 2px 2px 0;
 }
 
-/* Texto flotante estilo HUD */
 .hudText {
   position: absolute;
   bottom: 20px;
@@ -263,7 +254,6 @@
   right: 24px;
 }
 
-/* Modal Lightbox Cinematográfico */
 .modal {
   position: fixed;
   inset: 0;
@@ -323,7 +313,6 @@
   border: none;
 }
 
-/* Animaciones */
 @keyframes pulseRipple {
   0% {
     transform: scale(1);
@@ -355,7 +344,6 @@
   }
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
   .sectionTitle {
     font-size: 2rem;
@@ -367,7 +355,7 @@
   }
   
   .hudText {
-    display: none; /* Ocultar detalles HUD en móvil para limpiar la UI */
+    display: none;
   }
   
   .techDecor {

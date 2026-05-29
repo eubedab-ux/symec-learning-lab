@@ -6,7 +6,6 @@ import teaserThumbnail from '../assets/teaser_thumbnail.png';
 const Teaser: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Escucha el evento Escape para cerrar el modal y bloquea el scroll del body
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
@@ -42,7 +41,6 @@ const Teaser: React.FC = () => {
 
         <div className={styles.videoContainer}>
           <div className={styles.videoWrapper} onClick={handleOpenModal}>
-            {/* Imagen de fondo promocional */}
             <img
               src={teaserThumbnail}
               alt="SYMEC Learning Lab Teaser Thumbnail"
@@ -50,11 +48,9 @@ const Teaser: React.FC = () => {
               loading="lazy"
             />
 
-            {/* Overlay premium de gradiente y rejilla tecnológica */}
             <div className={styles.videoOverlay}>
               <div className={styles.techGrid}></div>
 
-              {/* Decoraciones en las esquinas */}
               <div className={styles.techDecor}>
                 <div className={`${styles.techLine} ${styles.topLeft}`}></div>
                 <div className={`${styles.techLine} ${styles.topRight}`}></div>
@@ -62,7 +58,6 @@ const Teaser: React.FC = () => {
                 <div className={`${styles.techLine} ${styles.bottomRight}`}></div>
               </div>
 
-              {/* HUD / Datos técnicos */}
               <div className={`${styles.hudText} ${styles.hudLeft}`}>
                 <span>[ SML-01 // TEASER PROMOTIONAL ]</span>
               </div>
@@ -70,7 +65,6 @@ const Teaser: React.FC = () => {
                 <span>CALIDAD: 4K ULTRA HD</span>
               </div>
 
-              {/* Botón de reproducción premium */}
               <button
                 className={styles.playButton}
                 aria-label="Reproducir video"
@@ -88,7 +82,6 @@ const Teaser: React.FC = () => {
         </div>
       </div>
 
-      {/* Modal Lightbox */}
       {isModalOpen && (
         <div
           className={styles.modal}

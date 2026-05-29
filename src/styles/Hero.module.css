@@ -34,7 +34,7 @@
 }
 
 .mainLogo {
-  height: 272px; /* Adjusted to 272px (reduced by 15% from 320px) */
+  height: 272px;
   width: auto;
   filter: drop-shadow(0 0 30px rgba(0, 194, 110, 0.2));
 }
@@ -45,7 +45,7 @@
   background-color: rgba(0, 194, 110, 0.08);
   color: var(--color-brand-green);
   border: 1px solid rgba(0, 194, 110, 0.2);
-  border-radius: 4px; /* More executive sharp corners */
+  border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 600;
   margin-bottom: 24px;
